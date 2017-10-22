@@ -1,0 +1,200 @@
+section {
+  text-align: center;
+  /*height: 100vh;*/
+}
+body {
+  counter-reset: header;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+.second-container {
+  padding: 80px 0 40px;
+}
+.content-header {
+  position: relative;
+  margin: 0 0 70px;
+  height: 145px;
+  z-index: 10;
+  text-align: left;
+  padding: 20px 0 0 20px;
+}
+.content-header:before {
+  color: rgba(244, 243, 243,1);
+  counter-increment: header;
+  content: '0' counter(header);
+  display: block;
+  font-size: 160px;
+  line-height: 1;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+}
+.content-header h3 {
+  font: bold 20px Arial, sans-serif;
+  line-height: 40px;
+}
+.content-header p {
+  line-height: 20px;
+  font-size: 18px;
+  color: #666;
+}
+/*================================HEADER-TOP================================*/
+.header {
+  width: 100%;
+  height: 11.5vh;
+  background: #fff;
+  overflow: hidden;
+  padding: 30px 0 0;
+}
+.logo {
+  float: left;
+  width: 168px;
+  height: 18px;
+}
+.nav-top {
+  float: right;
+}
+.nav-top li {
+  float: left;
+}
+.nav-top li>a {
+  text-transform: uppercase;
+  display: block;
+  font-size: 13px;
+  padding: 0 10px 10px;
+  line-height: 15px;
+  margin: 0 10px;
+  color: #111;
+  border-bottom: 5px solid transparent;
+}
+.nav-top li>a:hover {
+  border-bottom: 5px solid #e8bf5d;
+}
+/*==============================WELCOME SECTION==============================*/
+.welcome {
+  height: 88.5vh;
+  background: url(../img/welcome-bg.jpg) 50% 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+.contact-person {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+.contact-person>a {
+  float: right;
+}
+.person-name {
+  float: left;
+  text-align: left;
+  color: #fff;
+}
+.person-name h3 {
+  font-size: 60px;
+  line-height: 50px;
+}
+.person-name p {
+  line-height: 30px;
+  font-size: 30px;
+}
+.orange-btn {
+  display: block;
+  line-height: 50px;
+  padding: 0 50px;
+  color: #111;
+  border-radius: 50px;
+  background: #e8bf5d;
+}
+/*==============================ABOU-US SECTION==============================*/
+
+.about-us {
+  background: #fff;
+}
+.about-us-article {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 570px;
+  margin: 0 10px 40px 0;
+}
+.about-us-article h5 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.years {
+  padding: 0 20px 0 0;
+  line-height: 60px;
+  font-weight: bold;
+}
+/*===========================PRACTIS-AREA SECTION===========================*/
+.practis-area {
+  background: #111;
+}
+.practis-area .content-header:before {
+  color: rgba(244, 243, 243,0.1);
+}
+.practis-area .content-header h3 {
+  color: #fff;
+}
+.practis-area .content-header p {
+  color: #b9b9b9;
+}
+.our-services li {
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  padding: 0 30px 0 90px;
+  margin: 0 0 60px;
+  color: #fff;
+  line-height: 25px;
+  text-align: left;
+}
+.our-services li>h5 {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+li[name=client] {
+  background: url(../img/client.png) no-repeat;
+}
+li[name=employ] {
+  background: url(../img/employ.png) no-repeat;
+}
+li[name=sequre] {
+  background: url(../img/sequre.png) no-repeat;
+}
+li[name=estate] {
+  background: url(../img/estate.png) no-repeat;
+}
+/*===========================OUR-ATTORNEY SECTION===========================*/
+.our-attorney {
+  background: #fff;
+}
+.list-team li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 25px 60px 0;
+  text-align: left;
+}
+.list-team li:last-child {
+  margin-right: 0;
+}
+.list-team li>h3 {
+  font-size: 25px;
+  line-height: 35px;
+}
+.list-team li>img {
+  margin: 0 0 30px;
+}
