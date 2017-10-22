@@ -198,3 +198,65 @@ li[name=estate] {
 .list-team li>img {
   margin: 0 0 30px;
 }
+/*============================OUR-CLIENTS SECTION============================*/
+.our-clients {
+  background: url(../img/our-clients-bg.jpg) 50% 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.our-clients .content-header:before {
+  color: rgba(244, 243, 243,0.1);
+}
+.our-clients .content-header h3 {
+  color: #fff;
+}
+.client-say {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 100px;
+  justify-content: center;
+}
+.client-say img {
+  width: 370px;
+  height: 305px;
+  margin: 0 0 70px;
+  box-shadow: 20px 20px 0 0 #e8bf5d;
+}
+.article-content {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  width: 650px;
+  padding: 25px 0 50px 100px;
+}
+.article-content:before {
+  position: absolute;
+  left: 60px;
+  top: 20px;
+  content:'\201c';
+  font-size: 70px;
+  color: rgba(244, 243, 243,0.2);
+}
+.article-content p {
+  margin: 0 0 50px;
+  line-height: 25px;
+}
+.article-content h6 {
+  font-size: 25px;
+}
+.article-content h5 {
+  font-size: 15px;
+}
