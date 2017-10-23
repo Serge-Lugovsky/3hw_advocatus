@@ -5,6 +5,9 @@ section {
 body {
   counter-reset: header;
 }
+.white-text {
+  color: #fff;
+}
 .container {
   max-width: 1170px;
   width: 100%;
@@ -33,6 +36,9 @@ body {
   top: 0;
   z-index: -1;
   position: absolute;
+}
+.black-grey-text.content-header:before {
+  color: rgba(244, 243, 243,0.1);
 }
 .content-header h3 {
   font: bold 20px Arial, sans-serif;
@@ -144,12 +150,6 @@ body {
 .practis-area {
   background: #111;
 }
-.practis-area .content-header:before {
-  color: rgba(244, 243, 243,0.1);
-}
-.practis-area .content-header h3 {
-  color: #fff;
-}
 .practis-area .content-header p {
   color: #b9b9b9;
 }
@@ -205,12 +205,6 @@ li[name=estate] {
   -webkit-background-size: cover;
   background-size: cover;
 }
-.our-clients .content-header:before {
-  color: rgba(244, 243, 243,0.1);
-}
-.our-clients .content-header h3 {
-  color: #fff;
-}
 .client-say {
   display: -webkit-flex;
   display: -moz-flex;
@@ -261,3 +255,68 @@ li[name=estate] {
 .article-content h5 {
   font-size: 15px;
 }
+/*============================PUBLICATIONS SECTION============================*/
+.publications {
+  background: #fff;
+}
+.list-public li {
+  display: inline-block;
+  vertical-align: top;
+  width: 365px;
+  margin: 0 15px 40px;
+  text-align: left;
+  padding: 0 0 30px;
+  border-bottom: 3px solid #e8bf5d;
+}
+.list-public li:first-child {
+  margin-left: 0;
+}
+.list-public li:last-child {
+  margin-right: 0;
+}
+.list-public img {
+  margin: 0 0 30px;
+}
+.list-public li h5 {
+  font-size: 22px;
+}
+.list-public li .author {
+  line-height: 30px;
+  margin: 0 0 25px;
+}
+.list-public li .date {
+  color: #666;
+  float: right;
+}
+.list-public li .public-content {
+  margin: 0 0 30px;
+  line-height: 25px;
+}
+.list-public li .coments {
+  float: left;
+  background: url(../img/coment-icon.png.png) no-repeat;
+  padding: 0 0 0 25px;
+}
+.list-public li .share {
+  float: right;
+  background: url(../img/share-icon.png) no-repeat;
+  padding: 0 0 0 25px;
+}
+/*===============================QUESTION SECTION============================*/
+.question {
+  background: #111;
+}
+.orange-box {
+  width: 500px;
+  height: 280px;
+  background: #e8bf5d;
+  padding: 40px 40px 60px;
+  margin: 0 0 120px;
+  box-shadow: 0 5px 30px 0 #e8bf5d;
+}
+.orange-box p {
+  line-height: 30px;
+  text-align: left;
+  color: #111;
+}
+/*==============================CONTACT SECTION==============================*/
